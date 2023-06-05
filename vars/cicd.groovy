@@ -4,7 +4,7 @@ def newGit(repo)
 }
 def newBuild()
 {
-   sh 'mvn package'
+   sh "mvn package"
 }
 def newDeploy()
 {
@@ -12,5 +12,5 @@ def newDeploy()
 }
 def newTesting(jobname)
 {
-  sh 'java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar'
+  sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
